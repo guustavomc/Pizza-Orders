@@ -15,7 +15,6 @@ public class Main {
         ReadOrders newListOrders = new ReadOrders();
         newListOrders.readOrderFromJson();
         List<Order> orderLists = newListOrders.getListOrders();
-        //System.out.println(orderLists.get(0).getCustomerName());
 
         System.out.println("How many \"Four Cheese\" pizzas were ordered? "+FilterOrders.filterByUniqueFlavor(orderLists,"Four Cheese"));
         System.out.println("How many \"Caprese\" pizzas with \"medium\" size were ordered? "+FilterOrders.filterByUniqueFlavorAndSize(orderLists,"Caprese","medium"));
