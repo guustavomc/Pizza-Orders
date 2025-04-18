@@ -24,10 +24,6 @@ public class ReadOrders {
             JsonNode rootNode = objectMapper.readTree(new File(filePath));
 
             for(JsonNode orderNode: rootNode){
-                /*"name": "Blake",
-                "phone_number": "579-680-7913",
-                "pizza_flavor": "Chorizo",
-                "pizza_size": "large"*/
 
                 String customerName = orderNode.get("name").asText();
                 String phoneNumber = orderNode.get("phone_number").asText();
